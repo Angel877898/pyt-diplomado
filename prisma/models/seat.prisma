@@ -1,0 +1,5 @@
+type Seat {
+    id: ID! @id
+    row: Int
+    column: String
+}

@@ -1,0 +1,7 @@
+type Food implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    cost: Int! 
+    name: String! 
+}

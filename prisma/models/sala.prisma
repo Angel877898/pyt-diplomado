@@ -1,0 +1,14 @@
+type Sala implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    totalSeats: Int
+    isEnabled: Boolean @default(value:true)
+    style: SalaStyle
+}
+ enum SalaStyle {
+     THREED
+     FOURD
+     NORMAL
+     VIP
+ }
