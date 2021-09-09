@@ -1,0 +1,16 @@
+type Ticket implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    movie: Movie! @relation(link: INLINE)
+    sala: Sala! @relation(link: INLINE)
+    seat: Seat! @relation(link: INLINE)
+    price: Int! 
+    user: User @relation(link: INLINE)
+    method: PaidMethod!
+    time: DateTime! @Time
+}
+enum PaidMethod {
+    CARD
+    CASH
+}

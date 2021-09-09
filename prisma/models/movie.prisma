@@ -1,0 +1,10 @@
+type Movie implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    name: String!
+    duration: Int
+    genre: String
+    maxAgePermited: Int
+    year: Int
+}

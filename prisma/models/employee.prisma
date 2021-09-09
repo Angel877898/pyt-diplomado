@@ -1,9 +1,16 @@
-type User implements Node {
+type Employee implements Node {
   id: ID! @id
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
   email: String! @unique
   password: String
   name: String!
-  points: Int
+  type: EmployeeType
 }
+
+enum EmployeeType {
+    ADMIN
+    MANAGER
+    DEFAULT
+}
+
