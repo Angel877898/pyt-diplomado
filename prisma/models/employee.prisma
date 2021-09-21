@@ -6,6 +6,7 @@ type Employee implements Node {
   password: String!
   name: String!
   type: EmployeeType
+  token: String @unique
 }
 
 enum EmployeeType {

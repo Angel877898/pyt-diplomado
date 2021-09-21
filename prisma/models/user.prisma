@@ -6,4 +6,5 @@ type User implements Node {
   password: String
   name: String!
   points: Int
+  token: String @unique
 }
